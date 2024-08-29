@@ -1,0 +1,24 @@
+import = [
+    "~/.config/alacritty/themes/themes/gruvbox_dark.toml"
+]
+
+[window]
+opacity = 0.88
+padding = {x =0, y = 0}
+decorations_theme_variant = "Dark" # "Dark"
+
+[font]
+size = 13.0
+normal = {family = "MesloLGS NF", style = "Regular"}
+bold = {family = "MesloLGS NF", style = "Bold" }
+italic = {family = "MesloLGS NF", style = "Italic" }
+bold_italic = {family = "MesloLGS NF", style = "Bold Italic" }
+
+[cursor]
+style = {shape = "Beam", blinking = 'Always'}
+
+[terminal]
+osc52 = "CopyPaste"
+
+[mouse]
+hide_when_typing = true
