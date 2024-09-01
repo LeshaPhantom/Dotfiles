@@ -1,0 +1,11 @@
+#! /bin/sh 
+
+# get path image
+path_wall=$(find ~/wall/ -type f -name "*.jpg" -o -name "*.png" | shuf -n 1)
+
+# add this as background wallpaper 
+xwallpaper --zoom $path_wall
+
+# generate color scheme 
+wal -c 
+wal -i $path_wall

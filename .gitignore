@@ -1,1 +1,9 @@
 wall
+*
+.Xauthority
+.mozilla/
+.python3.12/
+.python_histor
+.oh-my-zsh/
+.cache
+
