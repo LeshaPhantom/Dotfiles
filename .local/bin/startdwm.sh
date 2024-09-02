@@ -1,6 +1,6 @@
 # /bin/sh
 
-setxkbmap -layout "us,ru" -option "grp:win_space_toggle"
+setxkbmap -layout "us,ru" -option "grp:caps_toggle"
 /home/lesha/.local/bin/newlook
 xcompmgr &
 
