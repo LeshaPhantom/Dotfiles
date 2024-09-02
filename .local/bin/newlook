@@ -1,3 +1,4 @@
+
 #! /bin/sh 
 
 # get path image
@@ -9,3 +10,5 @@ xwallpaper --zoom $path_wall
 # generate color scheme 
 wal -c 
 wal -i $path_wall
+
+xdotool key super+F5
