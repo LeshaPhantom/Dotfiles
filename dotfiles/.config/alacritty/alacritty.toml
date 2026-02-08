@@ -1,0 +1,16 @@
+# Конфигурация приложения
+
+[window]
+opacity = 0.75
+decorations = "full"
+decorations_theme_variant = "Light"
+
+[font]
+size = 13.0
+normal = {family = "Maple Mono NF CN", style = "Retina"}
+
+[terminal]
+osc52 = "CopyPaste"
+
+[mouse]
+hide_when_typing = true

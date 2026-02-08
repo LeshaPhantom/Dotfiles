@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dotfiles-sync"
+version = "0.1.0"
+description = "Sync dotfiles between repo and home directory (export/import, TUI, git updates)"
+authors = ["a.l.ilikaev"]
+readme = "README.md"
+packages = [{ include = "dotfiles_sync" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+textual = "^0.47.0"
+pyyaml = "^6.0.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.0"
+
+[tool.poetry.scripts]
+dotfiles-sync = "sync:main"
+dotfiles-add-program = "add_program:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

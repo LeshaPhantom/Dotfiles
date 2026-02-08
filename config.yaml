@@ -1,0 +1,16 @@
+storage_dir: dotfiles
+entries:
+- home: .tmux
+  type: dir
+- home: .tmux.conf
+  type: file
+- home: .config/alacritty
+  type: dir
+- home: .config/nvim
+  type: dir
+- home: .zshrc
+  type: file
+- home: .p10k.zsh
+  type: file
+- home: .oh-my-zsh
+  type: dir
