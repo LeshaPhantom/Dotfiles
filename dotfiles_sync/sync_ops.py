@@ -20,7 +20,12 @@ def export_all() -> list[tuple[str, bool, str | None]]:
                 if src.exists():
                     if dst.exists():
                         shutil.rmtree(dst)
-                    shutil.copytree(src, dst, symlinks=True)
+                    # Не копируем .git — иначе родительский репо не отслеживает файлы
+                    shutil.copytree(
+                        src, dst,
+                        symlinks=True,
+                        ignore=shutil.ignore_patterns(".git", ".gitmodules"),
+                    )
                     results.append((rel, True, None))
                 else:
                     results.append((rel, False, "не найден"))
@@ -49,7 +54,11 @@ def import_all() -> list[tuple[str, bool, str | None]]:
                 if src.exists():
                     if dst.exists():
                         shutil.rmtree(dst)
-                    shutil.copytree(src, dst, symlinks=True)
+                    shutil.copytree(
+                        src, dst,
+                        symlinks=True,
+                        ignore=shutil.ignore_patterns(".git", ".gitmodules"),
+                    )
                     results.append((rel, True, None))
                 else:
                     results.append((rel, False, "нет в репо"))
